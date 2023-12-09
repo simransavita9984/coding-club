@@ -1,0 +1,20 @@
+#include<iostream>
+int main(){
+    int num,evensum=0,oddsum=0;
+    std:: cout << "enter integers(enter 0 to stop):"<<std::endl;
+    while(true){
+        std::cin>> num;
+        if(num==0){
+            break;
+        }
+        if(num%2==0){
+            evensum+=num;
+        }else{
+            oddsum+=num;
+        }
+    }
+    std::cout<<"sum of even  integers:"<<evensum<<std::endl;
+        std::cout<<"sum of odd  integers:"<<oddsum<<std::endl;
+        return 0;
+}
+

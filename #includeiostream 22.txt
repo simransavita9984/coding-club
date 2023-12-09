@@ -1,0 +1,11 @@
+#include<iostream>
+int main(){
+    int number=10899;
+    int reversednumber=0;
+    while(number>0){
+        reversednumber=reversednumber * 10+ number%10;
+        number/=10;
+    }
+    std::cout<< "reversed number;"<<reversednumber << std::endl;
+    return 0;
+}
